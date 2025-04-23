@@ -1,0 +1,14 @@
+import numpy as np
+a = np.array([1, 2, 3])
+b = np.array([[1, 2], [3, 4]])
+print(a.ndim, b.ndim)
+print(type(a))
+# Indexing
+print(b[0][1])
+# Arithmetic
+print(a + 1, a * 2, a - 1)
+print(np.min(a), np.max(a))
+print(np.sum(a), np.sort(a))
+h_stack = np.hstack((a, a))
+v_stack = np.vstack((a, a))
+print(h_stack, v_stack)
