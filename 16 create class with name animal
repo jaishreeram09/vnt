@@ -1,0 +1,13 @@
+class Animal:
+def __init__(self, name, sound):
+self.name = name
+self.sound = sound
+a1 = Animal("Dog", "Bark")
+print(a1.name, a1.sound)
+# Inheritance
+class Dog(Animal):
+def __init__(self, name, sound, breed):
+super().__init__(name, sound)
+self.breed = breed
+d = Dog("Dog", "Bark", "Labrador")
+print(d.breed)
