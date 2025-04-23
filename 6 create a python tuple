@@ -1,0 +1,11 @@
+t1 = (1, 2, 3)
+t2 = (1, "Hi", 3.5)
+print(type(t1), type(t2))
+print(t1[1])
+print(t1[0:2])
+# Tuples are immutable
+# t1[0] = 10 # This will cause an error
+print(len(t1), min(t1), max(t1))
+lst = [1, 2, 3]
+tup = tuple(lst)
+print(tup, type(tup))
