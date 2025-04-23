@@ -1,0 +1,13 @@
+s = {1, 2, 3}
+print(s)
+# Sets are mutable
+s.add(4)
+print(s)
+s1 = {1, 2, 3, 4, 4, 5, 5}
+print(s1, type(s1))
+s1.update(["apple", "banana"])
+print(s1)
+s2 = {2, 3, "apple"}
+print("Union:", s1 | s2)
+print("Intersection:", s1 & s2)
+print("Difference:", s1 - s2)
