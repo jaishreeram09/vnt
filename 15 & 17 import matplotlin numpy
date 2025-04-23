@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.linspace(0, 10, 100)
+plt.plot(x, np.sin(x), label='Sine')
+plt.plot(x, np.cos(x), label='Cosine')
+plt.title("Sine and Cosine")
+plt.legend()
+plt.show()
+langs = ['C', 'C++', 'Java', 'Python', 'Oracle']
+students = [23, 17, 35, 29, 12]
+plt.bar(langs, students)
+plt.title("Bar Chart")
+plt.show()
+plt.pie(students, labels=langs, autopct='%1.1f%%')
+plt.title("Pie Chart")
+plt.show()
+plt.hist(students, bins=5)
+plt.title("Histogram")
+plt.show()
