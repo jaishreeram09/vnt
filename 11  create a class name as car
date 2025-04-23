@@ -1,0 +1,13 @@
+class Car:
+def __init__(self, model, color):
+self.model = model
+self.color = color
+c1 = Car("Toyota", "Red")
+print(c1.model, c1.color)
+# Inheritance
+class ElectricCar(Car):
+def __init__(self, model, color, battery):
+super().__init__(model, color)
+self.battery = battery
+ec = ElectricCar("Tesla", "White", "90kWh")
+print(ec.model, ec.battery)
