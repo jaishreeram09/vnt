@@ -1,0 +1,10 @@
+# Password compare
+pwd1 = "abc123"
+pwd2 = "abc123"
+print(pwd1 == pwd2)
+# Even or Odd
+n = 5
+print("Even" if n % 2 == 0 else "Odd")
+# Greet
+name = "Alex"
+print("Hello", name)
