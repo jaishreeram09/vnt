@@ -1,0 +1,9 @@
+# Dictionary
+students = {"John": 85, "Alice": 90, "Bob": 75}
+print(students["Alice"])
+# DataFrame
+import pandas as pd
+df = pd.DataFrame(list(students.items()), columns=["Name", "Marks"])
+print(df)
+# Access rows
+print(df.loc[0])
