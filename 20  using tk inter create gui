@@ -1,0 +1,15 @@
+import tkinter as tk
+def greet():
+name = entry.get()
+label2.config(text=f"Hello, {name}!")
+win = tk.Tk()
+win.title("Greeting App")
+label1 = tk.Label(win, text="Enter your name:")
+label1.pack()
+entry = tk.Entry(win)
+entry.pack()
+btn = tk.Button(win, text="Greet", command=greet)
+btn.pack()
+label2 = tk.Label(win)
+label2.pack()
+win.mainloop()
